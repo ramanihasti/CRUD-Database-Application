@@ -27,7 +27,7 @@ const userSchema = new mongooes.Schema({
 
 //model
 const User = mongooes.model("user", userSchema);
-
+// connect express server to mongooes
 const start = async () => {
   try {
     await mongooes.connect("mongodb://localhost:27017/mydb");
@@ -42,6 +42,7 @@ const start = async () => {
 
 start();
 
+//CRUD
 const createUser = async () => {
   try {
     const user = await User.create({
