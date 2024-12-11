@@ -10,3 +10,6 @@ const productSchema = new mongooes.Schema({
 const Product = mongooes.model("Product", productSchema);
 
 module.exports = Product;
+
+// databse ke collecction ko create karne ke liye kuch rules/regulation schema me banaye hain.
+// rules ke alawa koi different record insert karonge to nahi honaga.

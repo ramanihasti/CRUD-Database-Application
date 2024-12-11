@@ -5,3 +5,5 @@ const connect = () => {
 };
 
 module.exports = connect;
+
+// compass ke database ke sath mongooes ka connection hota hain.
